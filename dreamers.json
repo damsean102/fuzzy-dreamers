@@ -1,0 +1,157 @@
+var dreamers = [
+	{
+		"name": "Aaron jones",
+		"phone": "215",
+		"email": "aaron.jones@superdream.co.uk",
+		"dept": "Media",
+		"title": "Senior Media Buyer"
+	},
+	{
+		"name": "Amy Nibbs",
+		"phone": "225",
+		"email": "amy.nibbs@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Account Manager"
+	},
+	{
+		"name": "Anna Brookes",
+		"phone": "241",
+		"email": "anna.brookes@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Account Executive"
+	},
+	{
+		"name": "Dawn Tomlinson",
+		"phone": "208",
+		"email": "dawn.tomlinson@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Account Manager"
+	},
+	{
+		"name": "Elanor Edwards",
+		"phone": "220",
+		"email": "elanor.edwards@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Digital Account Manager"
+	},
+	{
+		"name": "Fran Nolan",
+		"phone": "219",
+		"email": "fran.nolan@superdream.co.uk",
+		"dept": "Management",
+		"title": "UK Director"
+	},
+	{
+		"name": "Hannah Moreton",
+		"phone": "214",
+		"email": "hannah.moreton@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Senior Account Manager"
+	},
+	{
+		"name": "Hayley Dallow",
+		"phone": "223",
+		"email": "hayley.dallow@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Account Manager"
+	},
+	{
+		"name": "Hayley Willis",
+		"phone": "212",
+		"email": "hayley.willis@superdream.co.uk",
+		"dept": "Admin",
+		"title": "Office Manager"
+	},
+	{
+		"name": "Heather Behan",
+		"phone": "200",
+		"email": "heather.behan@superdream.co.uk",
+		"dept": "Admin",
+		"title": "Office Coordinator"
+	},
+	{
+		"name": "Holly Aspinall",
+		"phone": "234",
+		"email": "holly.aspinall@superdream.co.uk",
+		"dept": "Admin",
+		"title": "Operations Manager",
+		"title": ""
+	},
+	{
+		"name": "Katie Davis",
+		"phone": "205",
+		"email": "hayley.dallow@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Account Manager"
+	},
+	{
+		"name": "Katherine",
+		"phone": "238",
+		"email": "katherine@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Account Executive"
+	},
+	{
+		"name": "Katrina (Tues & Thurs)",
+		"phone": "212",
+		"email": "katrina.Tues-and-thurs@superdream.co.uk",
+		"dept": "Admin",
+		"title": "Accountant"
+	},
+	{
+		"name": "Lucy Barratt- Smith",
+		"phone": "222",
+		"email": "lucy.barratt-smith@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Senior Account Executive"
+	},
+	{
+		"name": "Lyn Foxall",
+		"phone": "211",
+		"email": "lyn.foxall@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Senior Account Manager"
+	},
+	{
+		"name": "Mark Gaffney",
+		"phone": "233",
+		"email": "mark.gaffney@superdream.co.uk",
+		"dept": "Print Management",
+		"title": "Head of Production"
+	},
+	{
+		"name": "Mark McDonagh",
+		"phone": "210",
+		"email": "mark.mcdonagh@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Head of Client Services"
+	},
+	{
+		"name": "Matt Bubb",
+		"phone": "242",
+		"email": "matt.bubb@superdream.co.uk",
+		"dept": "Media",
+		"title": "Media Assistant"
+	},
+	{
+		"name": "Nat Dufton",
+		"phone": "204",
+		"email": "nat.dufton@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Account Executive"
+	},
+	{
+		"name": "Nat Pejovic",
+		"phone": "224",
+		"email": "natalie.pejovic@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Senior Account Manager"
+	},
+	{
+		"name": "Nicole Fenton",
+		"phone": "221",
+		"email": "nicole.fenton@superdream.co.uk",
+		"dept": "Account Management",
+		"title": "Account Executive"
+	}
+];

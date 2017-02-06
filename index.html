@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<title>Fuzzy Dreamers</title>
+</head>
+<body>
+
+	<div class="bg"></div>
+
+		<div class="wrapper">
+			<img src="img/sd_logo-and-tagline-new.svg" alt="" class="logo">
+			<div class="search">
+				<span class="icon"><i class="fa fa-search"></i></span>
+				<input type="search" id="search" placeholder="Type a dreamers name...">
+			</div>
+			<div id="dreamers"></div>
+		</div>
+	
+
+	
+	
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
+	<script src="js/fuzzy.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dreamers.json"></script>
+
+	<script>
+
+	window.onload = function() {
+    document.getElementById("search").focus();
+	};
+
+
+		$(function() {
+
+      // List the initial characters
+      displayResults();
+
+      // Filter the characters on each change of the textbox
+      $('#search').keyup(displayResults);
+    });
+		
+
+
+		function displayResults() {
+
+			_.templateSettings = {
+	      interpolate : /\{\{(.+?)\}\}/g
+	    };
+
+    	var listItemTemplate = _.template('<div class="dreamer"><div class="dreamer--phone"><i class="fa fa-phone" aria-hidden="true"></i><p>{{phone}}</p></div><div class="dreamer--name"><h2>{{name}}<span>{{title}}</span></h2><p class="dreamer--email"><a href="mailto:{{email}}">{{email}}</a></p><p class="dreamer--dept">{{dept}}</p></div></div>');
+
+      // The value we're searching for
+      var search = $('#search').val();
+      // var search = 'amy';
+
+      var options = {
+          pre: ""
+        , post: ""
+
+        // Each element in dreamers is an object, not a string. We can pass in a
+        // function that is called on each element in the array to extract the
+        // string to fuzzy search against. In this case, element.dir
+        , extract: function(entry) {
+            return entry.name + '::' + entry.phone + '::' + entry.title + '::' + entry.dept;
+            // return entry.name;
+          }
+      }
+
+      // Filter!
+      var filtered = fuzzy.filter(search, dreamers, options);
+
+      // Map the results to the html we want generated
+      var results = filtered.slice(0,50).map(function(result){
+        // var items = result.string.split('::');
+        // console.dir(result.original);
+        return listItemTemplate({
+        	name: result.original.name,
+          email: result.original.email,
+          phone: result.original.phone,
+          dept: result.original.dept,
+          title: result.original.title
+        });
+      });
+
+      // Update the html
+      $('#dreamers').html(results.join(''));
+
+    }
+		
+	</script>
+</body>
+</html>

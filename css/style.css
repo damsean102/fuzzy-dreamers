@@ -1,0 +1,148 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #000;
+  min-height: 100%;
+}
+
+.bg {
+  background: url('../img/superdream-hero-image-space-1.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+}
+
+.wrapper {
+  position: relative;
+  width: 40%;
+  margin: 0 30%;
+  padding: 35px 0;
+}
+
+img.logo {
+  margin: 25px auto 50px;
+  display: block;
+  width: 290px;
+}
+
+.search {
+  width: 100%;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.search input#search{
+  width: 100%;
+  height: 50px;
+  // background: #2b303b;
+  background: none;
+  border: none;
+  border-bottom: 3px solid #fff;
+  font-size: 34px;
+  float: left;
+  color: #fff;
+  padding-left: 45px;
+  outline: none;
+}
+
+.search input#search::-webkit-input-placeholder {
+  color: rgba(255,255,255,0.4);
+}
+ 
+.search input#search:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255,255,255,0.4);  
+}
+ 
+.search input#search::-moz-placeholder {  /* Firefox 19+ */
+  color: rgba(255,255,255,0.4);  
+}
+ 
+.search input#search:-ms-input-placeholder {  
+  color: rgba(255,255,255,0.4);  
+}
+
+.search .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #fff;
+}
+
+// .search input#search:hover, .search input#search:focus, .search input#search:active{
+//   outline:none;
+//   background: #fff;
+// }
+
+#dreamers {
+  float: left;
+  width: 100%;
+  clear: both;
+  margin: 50px 0 0;
+  color: #fff;
+}
+
+#dreamers a {
+  color: #fff;
+
+  transition: color .55s ease;
+}
+
+.dreamer {
+  clear: both;
+  width: 100%;
+  float: left;
+  padding: 4% 2%;
+  margin-bottom: 20px;
+  background: rgba(255,255,255,0.1);
+}
+
+.dreamer h2 {
+  margin-top: 0;
+}
+
+.dreamer h2 span {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.dreamer p {
+  margin: 0;
+}
+
+.dreamer p.dreamer--dept {
+ margin: 5px 0;
+ font-size: 12px;
+ text-transform: uppercase;
+}
+
+.dreamer--phone {
+  width: 20%;
+  float: left;
+  margin-right: 2%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.dreamer--phone i {
+  font-size: 44px;
+  display: block;
+}
+
+.dreamer--name {
+  width: 78%;
+  float: left;
+}
+
+.dreamer--name a:hover {
+  color: #ee2e24;
+}
