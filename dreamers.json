@@ -74,8 +74,7 @@ var dreamers = [
 		"phone": "234",
 		"email": "holly.aspinall@superdream.co.uk",
 		"dept": "Admin",
-		"title": "Operations Manager",
-		"title": ""
+		"title": "Operations Manager"
 	},
 	{
 		"name": "Katie Davis",
